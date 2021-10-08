@@ -1,0 +1,26 @@
+{
+  "name": "tailwindcss-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss build src/styles.css -o public/styles.css",
+    "watch": "tailwindcss build src/styles.css -o public/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justynadabrowska/tailwindcss-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justynadabrowska/tailwindcss-project/issues"
+  },
+  "homepage": "https://github.com/justynadabrowska/tailwindcss-project#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "tailwindcss": "^2.2.16"
+  }
+}

@@ -9,12 +9,61 @@
         <title>Tailwind CSS</title>
         <!-- when we run npm build style.css will appear -->
         <link rel="stylesheet" href="styles.css">
+        <script src="app.js" defer></script>
     </head>
 
 
-    <body>
-        <div class="flex justify-center">
-            <h1 class="text-3xl text-blue-500">Hello, Tailwind CSS!</h1>
+    <body class="bg-gray-200">
+        <div class="container m-auto text-gray-700 font-sans h-screen">
+            <nav class="p-10 md:p-0 flex justify-between items-center h-20 border-b border-gray-400 uppercase">
+                <div class="logo flex-grow">
+                    <span class="text-xl font-semibold">dabrowska</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+                      </svg>
+                </div>
+                <ul id="menu" class="hidden md:block md:flex flex-grow justify-between">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div id="burger" class="md:hidden cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                </div>
+            </nav>
+            <div class="hero grid md:grid-cols-2 gap-5 items-center py-16">
+                <div class="">
+                    <h2 class="hero-text text-6xl mb-3">Hi there, I'm Justyna</h2>
+                    <p class="text-3xl">I'm a frontend developer</p>
+                </div>
+                <img src="/img/hero-img.jpg" class="shadow-md" alt="laptop">
+            </div>
+            <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                <div class="bg-white rounded overflow-hidden shadow-md relative; hover:shadow-lg"> 
+                    <img class="w-full h-32 sm:h48 object-cover" src="/img/1.jpg" alt="hero">
+                    <div class="m-4">
+                      <span class="font-bold">Project 1</span>
+                      <span class="block text-gray-500 text-sm">HTML and CSS</span>
+                    </div>
+                  </div>
+                  <div class="bg-white rounded overflow-hidden shadow-md relative; hover:shadow-lg"> 
+                    <img class="w-full h-32 sm:h48 object-cover" src="/img/2.jpg" alt="hero">
+                    <div class="m-4">
+                      <span class="font-bold">Project 2</span>
+                      <span class="block text-gray-500 text-sm">SASS</span>
+                    </div>
+                  </div>
+                  <div class="bg-white rounded overflow-hidden shadow-md relative; hover:shadow-lg"> 
+                    <img class="w-full h-32 sm:h48 object-cover" src="/img/3.jpg" alt="hero">
+                    <div class="m-4">
+                      <span class="font-bold">Project 3</span>
+                      <span class="block text-gray-500 text-sm">Tailwindcss</span>
+                    </div>
+                  </div>
+            </div>
         </div>
     </body>
 
